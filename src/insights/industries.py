@@ -1,10 +1,12 @@
-from src.insights.jobs import ProcessJobs
+"""Module to process csv data file."""
+
 from typing import List
+from src.insights.jobs import ProcessJobs
 
 
 class ProcessIndustries(ProcessJobs):
-    def __init__(self):
-        super().__init__()
+    """Read and process csv jobs data."""
 
     def get_unique_industries(self) -> List[str]:
-        pass
+        """Return unique industries from jobs."""
+        return list({job["industry"] for job in self.jobs_list})
