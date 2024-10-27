@@ -9,4 +9,6 @@ class ProcessIndustries(ProcessJobs):
 
     def get_unique_industries(self) -> List[str]:
         """Return unique industries from jobs."""
-        return list({job["industry"] for job in self.jobs_list})
+        return list(
+            {job["industry"] for job in self.jobs_list if job["industry"]}
+        )
