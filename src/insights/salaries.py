@@ -28,7 +28,16 @@ class ProcessSalaries(ProcessJobs):
         return min_salary if min_salary != float("inf") else 0
 
     def matches_salary_range(self, job: Dict, salary: Union[int, str]) -> bool:
-        pass
+        """Return a boolean to show if the salary is compatible."""
+        try:
+            salary = int(salary)
+            min_salary = int(job["min_salary"])
+            max_salary = int(job["max_salary"])
+        except (ValueError, KeyError, TypeError) as error:
+            raise ValueError(error)
+        if min_salary > max_salary:
+            raise ValueError("Min salary is greater than max salary.")
+        return min_salary <= salary <= max_salary
 
     def filter_by_salary_range(
         self, jobs: List[dict], salary: Union[str, int]
