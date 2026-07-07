@@ -167,17 +167,18 @@ i18n = ["Babel (>=2.7)"]
 
 [[package]]
 name = "markdown"
-version = "3.3.6"
-description = "Python implementation of Markdown."
+version = "3.8.1"
+description = "Python implementation of John Gruber's Markdown."
 optional = false
-python-versions = ">=3.6"
+python-versions = ">=3.9"
 groups = ["main"]
 files = [
-    {file = "Markdown-3.3.6-py3-none-any.whl", hash = "sha256:9923332318f843411e9932237530df53162e29dc7a4e2b91e35764583c46c9a3"},
-    {file = "Markdown-3.3.6.tar.gz", hash = "sha256:76df8ae32294ec39dcf89340382882dfa12975f87f45c3ed1ecdb1e8cefc7006"},
+    {file = "markdown-3.8.1-py3-none-any.whl", hash = "sha256:46cc0c0f1e5211ab2e9d453582f0b28a1bfaf058a9f7d5c50386b99b588d8811"},
+    {file = "markdown-3.8.1.tar.gz", hash = "sha256:a2e2f01cead4828ee74ecca9623045f62216aef2212a7685d6eb9163f590b8c1"},
 ]
 
 [package.extras]
+docs = ["mdx_gh_links (>=0.2)", "mkdocs (>=1.6)", "mkdocs-gen-files", "mkdocs-literate-nav", "mkdocs-nature (>=0.6)", "mkdocs-section-index", "mkdocstrings[python]"]
 testing = ["coverage", "pyyaml"]
 
 [[package]]
@@ -410,7 +411,7 @@ name = "python-dotenv"
 version = "1.2.2"
 description = "Read key-value pairs from a .env file and set them as environment variables"
 optional = false
-python-versions = ">=3.10"
+python-versions = ">=3.5"
 groups = ["main"]
 files = [
     {file = "python_dotenv-1.2.2-py3-none-any.whl", hash = "sha256:1d8214789a24de455a8b8bd8ae6fe3c6b69a5e3d64aa8a8e5d68e694bbcb285a"},
@@ -465,4 +466,4 @@ test = ["pytest (>=3.0.0)", "pytest-cov"]
 [metadata]
 lock-version = "2.1"
 python-versions = "^3.12"
-content-hash = "3433f82ec569bb23bea5b235aedbc23ba714f256b6221cd4968849c3136411d3"
+content-hash = "d3b2bb95c670f9d379a5bdeac89d82acd8580f410a1ea0748a86e139475a9111"
