@@ -41,7 +41,7 @@ markdown = "3.8.1"
 
 [tool.poetry.group.dev.dependencies]
 wheel = "0.37.1"
-black = "22.1.0"
+black = "26.10.1"
 flake8 = "4.0.1"
 pytest = "7.0.1"
 pytest-json = "0.4.0"
